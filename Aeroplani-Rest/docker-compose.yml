@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - "6060:5432"
+    environment:
+      POSTGRES_DB: Airplane
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
